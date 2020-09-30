@@ -1,0 +1,41 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package praktikum1;
+
+import java.util.Scanner;
+/**
+ *
+ * @author krisn
+ */
+public class Scanner_GanjilGenap {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        //inisialisasi scanner
+        Scanner input  = new Scanner(System.in);
+        
+        //deklarasi variabel
+        int bilangan;
+        
+        //user menginputkan bilangan
+        System.out.print("Masukkan Bilangan : ");
+        
+        //Mengambil inputan dari user
+        bilangan = input.nextInt();
+        
+        //Melakukan pengecekan bilagan genap atau bilangan ganjil
+        //output
+        if (bilangan % 2 == 0) {
+            System.out.println(+bilangan+" Adalah Bilangan Genap");
+        }else{
+            System.out.println(+bilangan+" Adalah Bilangan Ganjil");
+        }
+        
+    }
+    
+}
