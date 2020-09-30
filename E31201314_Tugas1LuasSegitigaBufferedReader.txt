@@ -1,0 +1,50 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package praktikum1;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+/**
+ *
+ * @author krisn
+ */
+public class BufferedReader2_LuasSegitiga {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) throws IOException {
+        //inisialisasi bufferReader
+        BufferedReader input = new BufferedReader (new InputStreamReader (System.in));
+        
+        //deklarasi variabel 
+        float alas;
+        float tinggi;
+        float luas;
+        
+        //user menginput alas
+        System.out.print("Alas : ");
+        
+        //mengambil inputan alas dan disimpan di variabel alas
+        //convert ke tipe data float
+        alas = Float.parseFloat(input.readLine());
+        
+        //user menginput tinggi
+        System.out.print("Tinggi : ");
+        
+        //mengambil inputan tinggi dan disimpan di variabel tinggi
+        //convert ke tipe data float
+        tinggi = Float.parseFloat(input.readLine());
+        
+        //menghitung luas segitiga dan disimpan di variabel luas
+        luas = (alas/2)*tinggi;
+        
+        //menampilkan hasil output luas segitiga
+        System.out.println("Luas Segitiga : "+luas);
+    }
+    
+}
